@@ -15,7 +15,7 @@ interface PageHeroProps {
 
 export function PageHero({ title, subtitle, eyebrow, imageSrc, className, alt = "" }: PageHeroProps) {
   return (
-    <section className={cn("relative h-[60vh] min-h-[500px] w-full flex items-center justify-center mt-20 overflow-hidden", className)}>
+    <section className={cn("relative h-[60vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden", className)}>
       <motion.div 
         initial={{ opacity: 0, y: 100, scale: 0.9, filter: "blur(5px)" }}
         animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
@@ -32,7 +32,7 @@ export function PageHero({ title, subtitle, eyebrow, imageSrc, className, alt = 
         <div className="absolute inset-0 bg-primary/70 mix-blend-multiply" />
       </motion.div>
       
-      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center mt-12">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center mt-4 sm:mt-6">
         {eyebrow && (
           <motion.span 
             initial={{ opacity: 0, y: 20 }}

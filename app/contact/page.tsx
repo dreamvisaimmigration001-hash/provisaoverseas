@@ -29,7 +29,7 @@ export default function ContactPage() {
 
   return (
     <div className="flex flex-col w-full overflow-hidden bg-bg-primary min-h-screen">
-      <div className="pt-36 pb-16 text-center max-w-3xl mx-auto px-6">
+      <div className="pt-8 sm:pt-12 pb-12 text-center max-w-3xl mx-auto px-6">
         <span className="text-[11px] font-bold tracking-[0.3em] text-accent uppercase block mb-6">REACH OUT & BOOK</span>
         <h1 className="text-4xl md:text-6xl font-heading font-normal text-primary mb-6">Let's Talk About Your Future.</h1>
         <p className="text-text-muted text-lg font-light leading-relaxed">

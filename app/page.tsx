@@ -34,7 +34,7 @@ export default function Home() {
     <div className="flex flex-col w-full overflow-hidden bg-bg-primary">
       
       {/* 1. LUXURY EDITORIAL HERO SECTION */}
-      <section className="relative min-h-[92vh] pt-36 pb-20 sm:pt-40 lg:pt-44 lg:pb-28 w-full max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-16 flex flex-col justify-between overflow-hidden">
+      <section className="relative min-h-[85vh] pt-8 pb-16 sm:pt-12 lg:pt-14 lg:pb-24 w-full max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-16 flex flex-col justify-between overflow-hidden">
         {/* Ambient subtle glow backdrops */}
         <div className="absolute top-12 left-1/4 -z-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-10 right-10 -z-10 w-[450px] h-[450px] bg-primary/5 rounded-full blur-3xl pointer-events-none" />
