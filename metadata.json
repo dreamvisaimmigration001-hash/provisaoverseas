@@ -1,0 +1,6 @@
+{
+  "name": "Pro Visa Overseas",
+  "description": "Premium international immigration and visa consultancy helping clients with overseas education, work visas, visitor visas, and permanent residency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
