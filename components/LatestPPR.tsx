@@ -5,24 +5,19 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, X, ZoomIn, Stamp, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getPPRImages, type PPRImage } from '@/app/actions/ppr';
+import { PPR_IMAGES, type PPRImage } from '@/lib/ppr';
 
 interface LatestPPRProps {
   showViewAllLink?: boolean;
 }
 
 export default function LatestPPR({ showViewAllLink = false }: LatestPPRProps) {
-  const [images, setImages] = useState<PPRImage[]>([]);
+  const [images] = useState<PPRImage[]>(PPR_IMAGES);
   const [activeFilter, setActiveFilter] = useState<'all' | 'australia' | 'europe' | 'new-zealand'>('all');
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
-
-  // Load images from server action on mount
-  useEffect(() => {
-    getPPRImages().then(setImages);
-  }, []);
 
   const displayedImages = images.filter((img) => {
     if (activeFilter === 'all') return true;
