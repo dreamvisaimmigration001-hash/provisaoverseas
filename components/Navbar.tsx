@@ -67,8 +67,8 @@ export function Navbar() {
       <header
         className={cn(
           'fixed top-0 w-full z-40 transition-all duration-300 ease-in-out',
-          scrolled 
-            ? 'bg-bg-primary/90 backdrop-blur-md h-16 sm:h-20 shadow-xs border-b border-border/60' 
+          scrolled
+            ? 'bg-bg-primary/90 backdrop-blur-md h-16 sm:h-20 shadow-xs border-b border-border/60'
             : 'bg-transparent h-20 sm:h-28'
         )}
       >
@@ -210,8 +210,13 @@ export function Navbar() {
                     <div className="space-y-2 text-sm text-text-muted px-3">
                       <p className="flex items-center gap-2.5 py-1">
                         <Phone className="w-4 h-4 text-accent shrink-0" />
-                        <a href="tel:+918427699682" className="text-text-dark font-medium hover:text-accent">
-                          084276 99682
+
+                        <a href="tel:+918427591312" className="hover:text-accent transition-colors">
+                          +91 84275 91312
+                        </a>
+                        <br />
+                        <a href="tel:+917696778874" className="hover:text-accent transition-colors">
+                          +91 76967 78874
                         </a>
                       </p>
                       <p className="flex items-center gap-2.5 py-1">

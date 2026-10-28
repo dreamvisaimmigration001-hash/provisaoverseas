@@ -40,7 +40,7 @@ export default function ContactPage() {
       <section className="pb-32">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            
+
             {/* Contact Details Column */}
             <div className="lg:col-span-5 space-y-8">
               <div className="bg-bg-card p-8 sm:p-10 rounded-[32px] border border-border shadow-sm space-y-8">
@@ -60,8 +60,12 @@ export default function ContactPage() {
                     <div className="pt-0.5">
                       <h4 className="font-heading font-normal text-primary text-base mb-1">Phone & WhatsApp</h4>
                       <p className="text-text-muted text-sm font-light">
-                        <a href="tel:+918427699682" className="hover:text-accent transition-colors">
-                          084276 99682
+                        <a href="tel:+918427591312" className="hover:text-accent transition-colors">
+                          +91 84275 91312
+                        </a>
+                        <br />
+                        <a href="tel:+917696778874" className="hover:text-accent transition-colors">
+                          +91 76967 78874
                         </a>
                       </p>
                     </div>
@@ -130,7 +134,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2.5">
                         <label className="text-xs font-bold tracking-wider uppercase text-primary">Full Name</label>
-                        <input 
+                        <input
                           {...register("fullName", { required: true })}
                           className="w-full px-5 py-4 rounded-xl border border-border focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors bg-white font-light text-sm"
                           placeholder="John Doe"
@@ -139,7 +143,7 @@ export default function ContactPage() {
                       </div>
                       <div className="space-y-2.5">
                         <label className="text-xs font-bold tracking-wider uppercase text-primary">Email Address</label>
-                        <input 
+                        <input
                           type="email"
                           {...register("email", { required: true })}
                           className="w-full px-5 py-4 rounded-xl border border-border focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors bg-white font-light text-sm"
@@ -152,7 +156,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2.5">
                         <label className="text-xs font-bold tracking-wider uppercase text-primary">Phone Number</label>
-                        <input 
+                        <input
                           {...register("phone", { required: true })}
                           className="w-full px-5 py-4 rounded-xl border border-border focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors bg-white font-light text-sm"
                           placeholder="+1 (555) 000-0000"
@@ -161,7 +165,7 @@ export default function ContactPage() {
                       </div>
                       <div className="space-y-2.5">
                         <label className="text-xs font-bold tracking-wider uppercase text-primary">Preferred Date</label>
-                        <input 
+                        <input
                           type="date"
                           {...register("date", { required: true })}
                           className="w-full px-5 py-4 rounded-xl border border-border focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors bg-white font-light appearance-none text-sm"
@@ -173,7 +177,7 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2.5">
                         <label className="text-xs font-bold tracking-wider uppercase text-primary">Destination Country</label>
-                        <select 
+                        <select
                           {...register("country", { required: true })}
                           className="w-full px-5 py-4 rounded-xl border border-border focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors bg-white font-light appearance-none text-sm"
                         >
@@ -189,7 +193,7 @@ export default function ContactPage() {
                       </div>
                       <div className="space-y-2.5">
                         <label className="text-xs font-bold tracking-wider uppercase text-primary">Visa Category</label>
-                        <select 
+                        <select
                           {...register("visaType", { required: true })}
                           className="w-full px-5 py-4 rounded-xl border border-border focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors bg-white font-light appearance-none text-sm"
                         >
@@ -206,7 +210,7 @@ export default function ContactPage() {
 
                     <div className="space-y-2.5">
                       <label className="text-xs font-bold tracking-wider uppercase text-primary">Additional Details (Optional)</label>
-                      <textarea 
+                      <textarea
                         {...register("message")}
                         rows={3}
                         className="w-full px-5 py-4 rounded-xl border border-border focus:outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-colors bg-white font-light resize-none text-sm"
@@ -219,7 +223,7 @@ export default function ContactPage() {
                         {isSubmitting ? "Submitting Request..." : "Book My Free Consultation"}
                       </Button>
                     </div>
-                    
+
                     <p className="text-xs text-text-muted text-center mt-3 font-light">
                       By submitting this form, you agree to our privacy policy. Your information is kept strictly confidential.
                     </p>
