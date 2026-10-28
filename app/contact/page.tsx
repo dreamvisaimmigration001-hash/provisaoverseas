@@ -53,14 +53,17 @@ export default function ContactPage() {
                 </div>
 
                 <div className="space-y-6 pt-2 border-t border-border">
-                  {/* Phone and address commented out — will be added when finalized
                   <div className="flex items-start gap-4">
                     <div className="w-11 h-11 rounded-2xl bg-accent/15 border border-accent/20 flex items-center justify-center shrink-0 text-accent">
                       <Phone className="w-5 h-5 text-accent" />
                     </div>
                     <div className="pt-0.5">
                       <h4 className="font-heading font-normal text-primary text-base mb-1">Phone & WhatsApp</h4>
-                      <p className="text-text-muted text-sm font-light">+1 (555) 123-4567</p>
+                      <p className="text-text-muted text-sm font-light">
+                        <a href="tel:+918427699682" className="hover:text-accent transition-colors">
+                          084276 99682
+                        </a>
+                      </p>
                     </div>
                   </div>
 
@@ -71,12 +74,11 @@ export default function ContactPage() {
                     <div className="pt-0.5">
                       <h4 className="font-heading font-normal text-primary text-base mb-1">Office Location</h4>
                       <p className="text-text-muted text-sm font-light leading-relaxed">
-                        2nd Floor, SECTOR-31D, SCO 37,<br />
-                        Sector 31, Chandigarh, 160030, India
+                        SCO 181, 182, Second Floor,<br />
+                        Sector 17C, Chandigarh, India
                       </p>
                     </div>
                   </div>
-                  */}
 
                   <div className="flex items-start gap-4">
                     <div className="w-11 h-11 rounded-2xl bg-accent/15 border border-accent/20 flex items-center justify-center shrink-0 text-accent">

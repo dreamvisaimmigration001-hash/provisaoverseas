@@ -210,7 +210,12 @@ export function Navbar() {
                     <div className="space-y-2 text-sm text-text-muted px-3">
                       <p className="flex items-center gap-2.5 py-1">
                         <Phone className="w-4 h-4 text-accent shrink-0" />
-                        <span className="text-text-dark font-medium">Chandigarh, Sector 31-D</span>
+                        <a href="tel:+918427699682" className="text-text-dark font-medium hover:text-accent">
+                          084276 99682
+                        </a>
+                      </p>
+                      <p className="flex items-center gap-2.5 py-1">
+                        <span className="text-text-muted text-xs">Sector 17C, Chandigarh, India</span>
                       </p>
                       <p className="flex items-center gap-2.5 py-1">
                         <Mail className="w-4 h-4 text-accent shrink-0" />

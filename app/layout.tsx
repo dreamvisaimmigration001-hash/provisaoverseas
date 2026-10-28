@@ -129,11 +129,18 @@ export const metadata: Metadata = {
     telephone: true,
   },
 
-  // Verification (replace with actual verification codes when available)
-  // verification: {
-  //   google: 'YOUR_GOOGLE_SITE_VERIFICATION_CODE',
-  //   yandex: 'YOUR_YANDEX_VERIFICATION_CODE',
-  // },
+  // Icons & Favicons
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/web-app-manifest-512x512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/web-app-manifest-192x192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+  },
 };
 
 // JSON-LD structured data for Organization + LocalBusiness
@@ -147,22 +154,21 @@ const jsonLdOrganization = {
   logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-image.png`,
   description: DEFAULT_DESCRIPTION,
-  // Phone and address commented out — will be added when finalized
-  // telephone: '+91-XXXXXXXXXX',
-  // email: 'info@provisaoverseas.com',
-  // address: {
-  //   '@type': 'PostalAddress',
-  //   streetAddress: '2nd Floor, SECTOR-31D, SCO 37',
-  //   addressLocality: 'Chandigarh',
-  //   addressRegion: 'Chandigarh',
-  //   postalCode: '160030',
-  //   addressCountry: 'IN',
-  // },
-  // geo: {
-  //   '@type': 'GeoCoordinates',
-  //   latitude: 30.7333,
-  //   longitude: 76.7794,
-  // },
+  telephone: '+91-8427699682',
+  email: 'info@provisaoverseas.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'SCO 181, 182, Second Floor, Sector 17C',
+    addressLocality: 'Chandigarh',
+    addressRegion: 'Chandigarh',
+    postalCode: '160017',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 30.7398,
+    longitude: 76.7827,
+  },
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -301,7 +307,7 @@ const jsonLdBreadcrumb = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={`${playfair.variable} ${manrope.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${manrope.variable}`} suppressHydrationWarning>
       <head>
         {/* JSON-LD Structured Data */}
         <Script
