@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { getAllBlogPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.provisaoverseas.com';
@@ -92,5 +93,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...servicePages, ...countryPages];
+  // Blog pages
+  const blogPosts = getAllBlogPosts();
+  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...servicePages, ...countryPages, ...blogPages];
 }
