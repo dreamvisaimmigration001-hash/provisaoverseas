@@ -40,7 +40,7 @@ export const blogPosts: BlogPost[] = [
       name: 'Simranjit Singh',
       role: 'Senior Immigration Strategist',
     },
-    image: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&fit=crop&w=1200&q=80',
     tags: ['Australia', 'Permanent Residency', 'Points Test', 'GSM Visa', 'Subclass 189', 'Subclass 190'],
     sections: [
       {
