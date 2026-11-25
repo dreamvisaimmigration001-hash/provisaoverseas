@@ -162,15 +162,21 @@ export function Footer() {
                 <div className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center shrink-0 text-accent">
                   <Phone className="h-4 w-4" />
                 </div>
-                <div className="pt-2">
+                <div className="pt-2 flex flex-col gap-1">
                   <span className="block text-white font-medium mb-1">
                     Phone & WhatsApp
                   </span>
                   <a
-                    href="tel:+918427699682"
+                    href="tel:+918427591312"
                     className="hover:text-white transition-colors"
                   >
-                    084276 99682
+                    +91 84275 91312
+                  </a>
+                  <a
+                    href="tel:+917696778874"
+                    className="hover:text-white transition-colors"
+                  >
+                    +91 76967 78874
                   </a>
                 </div>
               </li>

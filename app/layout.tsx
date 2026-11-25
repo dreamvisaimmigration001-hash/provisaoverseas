@@ -298,7 +298,7 @@ const jsonLdBreadcrumb = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en" className={`${playfair.variable} ${manrope.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${manrope.variable}`} suppressHydrationWarning>
       <head>
         {/* JSON-LD Structured Data */}
         <Script
